@@ -1,0 +1,58 @@
+{
+  "name": "abortcontroller-chain",
+  "version": "1.0.0",
+  "description": "Simple utility to chain an AbortController to one or more AbortSignals.",
+  "keywords": [
+    "signal",
+    "abortsignal",
+    "abortcontroller",
+    "context",
+    "chain"
+  ],
+  "author": "Kyle Johnson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyle-johnson/chainable-abortcontroller-deadline.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">= 14"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:ci": "jest --coverage --ci",
+    "build": "rm -rf dist && tsc -p tsconfig.dist.json",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "jest": {
+    "coverageDirectory": "coverage",
+    "testEnvironment": "node",
+    "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {}
+    }
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "5.7.0",
+    "@typescript-eslint/parser": "5.7.0",
+    "eslint": "8.5.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-jest": "25.3.0",
+    "eslint-plugin-unicorn": "39.0.0",
+    "jest": "^27.4.7",
+    "prettier": "2.5.1",
+    "ts-jest": "27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
