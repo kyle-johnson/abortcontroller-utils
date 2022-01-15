@@ -1,0 +1,111 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  # allow manual runs
+  workflow_dispatch:
+env:
+  PNPM_VERSION: 6.23.2
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    strategy:
+      matrix:
+        node: [16]
+        package: ["chain"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - name: install deps
+        run: pnpm install --frozen-lockfile --filter {./packages/${{ matrix.package }}}...
+      - name: build
+        run: pnpm run build --filter {./packages/${{ matrix.package }}}...
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    strategy:
+      max-parallel: 4
+      matrix:
+        package: ["chain"]
+        command: ["test:ci"]
+        node: [ 16 ]
+        include:
+          - package: "chain"
+            command: lint
+            node: 16
+          - package: "chain"
+            command: "format:check"
+            node: 16
+          - package: "chain"
+            command: "type-check"
+            node: 16
+          - package: "chain"
+            command: "test:web"
+            node: 16
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+          cache: "pnpm"
+          cache-dependency-path: pnpm-lock.yaml
+      - name: install deps
+        run: pnpm install --frozen-lockfile --filter {./packages/${{ matrix.package }}}...
+      - name: build deps
+        run: pnpm run build --filter {./packages/${{ matrix.package }}}^...
+      - name: ${{ matrix.command }}
+        run: pnpm run ${{ matrix.command }} --filter {./packages/${{ matrix.package }}}
+      - name: coverage
+        uses: codecov/codecov-action@v2
+        if: matrix.command == 'test:ci' && matrix.node == '16'
+        with:
+          flags: ${{ matrix.package }}
+          files: ./packages/${{ matrix.package }}/coverage/coverage-final.json
+  release:
+    if: github.ref == 'refs/heads/main'
+    needs: ["test", "build"]
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+      - name: install deps
+        run: pnpm install --frozen-lockfile
+      - name: build all
+        run: pnpm run -r build
+      - name: write .npmrc
+        run: printf "//registry.npmjs.org/:_authToken=%s" "$NPM_TOKEN" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Changesets
+        id: Changesets
+        uses: changesets/action@v1
+        with:
+          publish: pnpm -r publish --no-git-checks
+          version: pnpm changeset version
+          commit: "chore: update versions"
+          title: "chore: update versions"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

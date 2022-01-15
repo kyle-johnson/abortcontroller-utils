@@ -1,3 +1,11 @@
+/**
+ * Connects the given signals to the controller: if any signal aborts, the controller will
+ * be aborted as well.
+ *
+ * @param controller {AbortController} optional; a new controller will be created and returned if not provided
+ * @param signals {Array<AbortSignal>} the signals to connect to the controller
+ * @returns {AbortController}
+ */
 export function chainAbortController(
   controller: AbortController,
   ...signals: Array<AbortSignal>
@@ -6,18 +14,18 @@ export function chainAbortController(
   ...signals: Array<AbortSignal>
 ): AbortController;
 export function chainAbortController(
-  arg0: AbortController | AbortSignal,
+  argument0: AbortController | AbortSignal,
   ...remainder: Array<AbortSignal>
 ): AbortController {
   let signals: Array<AbortSignal>;
   let controller: AbortController;
 
   // normalize args
-  if (arg0 instanceof AbortSignal) {
+  if (argument0 instanceof AbortSignal) {
     controller = new AbortController();
-    signals = [arg0, ...remainder];
+    signals = [argument0, ...remainder];
   } else {
-    controller = arg0;
+    controller = argument0;
     signals = remainder;
   }
 
@@ -30,16 +38,15 @@ export function chainAbortController(
 
   for (const signal of signals) {
     // check before adding! (and assume there is no possible way that the signal could
-    // abort between the `if` check and adding the the event listener)
+    // abort between the `if` check and adding the event listener)
     if (signal.aborted) {
       controller.abort();
       break;
     }
     signal.addEventListener("abort", handler, {
       once: true,
-      // the reason for this is to free up memory a bit faster by removing dangling
-      // references to the controller; it is part of the DOM specification and works
-      // in Node 16+ (Node 14????)
+      // this can free up memory by removing dangling references to the controller
+      // (part of the DOM specification and works in Node 16+ (Node 14????))
       signal: controller.signal,
     });
   }

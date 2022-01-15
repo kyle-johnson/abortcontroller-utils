@@ -26,7 +26,7 @@ describe("chainAbortController", () => {
     chainAbortController(controller, signal);
     expect(addEventListernSpy).not.toHaveBeenCalled();
     addEventListernSpy.mockRestore();
-  })
+  });
 
   describe("one signal", () => {
     let signalController: AbortController;
