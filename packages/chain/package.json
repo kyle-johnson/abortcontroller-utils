@@ -1,6 +1,6 @@
 {
   "name": "abortcontroller-chain",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Simple utility to chain an AbortController to one or more AbortSignals.",
   "keywords": [
     "signal",
