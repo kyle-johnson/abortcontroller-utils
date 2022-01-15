@@ -1,5 +1,11 @@
 # abortcontroller-chain
 
+## 1.0.3
+
+### Patch Changes
+
+- [`b1c0255`](https://github.com/kyle-johnson/abortcontroller-utils/commit/b1c0255e4efbbb30281dcbc097ab62c8e0e521c4) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - Explain _why_ chaining is useful.
+
 ## 1.0.2
 
 ### Patch Changes
