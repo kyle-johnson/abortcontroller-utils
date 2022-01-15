@@ -1,5 +1,22 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":pinOnlyDevDependencies",
+    ":dependencyDashboard",
+    ":prHourlyLimit4",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergePr",
+    ":automergePatch",
+    ":automergeRequireAllStatusChecks",
+    ":semanticCommits"
+  ],
+  "prConcurrentLimit": 5,
+  "stabilityDays": 5,
+  "packageRules": [
+    {
+      "matchPackageNames": ["@types/node"],
+      "extends": [":disableMajorUpdates"]
+    }
   ]
 }
