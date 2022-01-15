@@ -1,6 +1,6 @@
 {
   "name": "abortcontroller-deadline",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Create an AbortController which aborts after a set number of milliseconds pass (a deadline). Optionally connects to other AbortSignals.",
   "keywords": [
     "signal",
