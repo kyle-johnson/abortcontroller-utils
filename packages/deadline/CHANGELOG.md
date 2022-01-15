@@ -1,9 +1,14 @@
 # abortcontroller-deadline
 
+## 1.0.0
+
+### Major Changes
+
+- [`7517ae4`](https://github.com/kyle-johnson/abortcontroller-utils/commit/7517ae41836b18a854fd06d603d7628fa6ee4a4e) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - Bump to 1.0.0, this is stable.
+
 ## 0.0.2
+
 ### Patch Changes
-
-
 
 - [`710b584`](https://github.com/kyle-johnson/abortcontroller-utils/commit/710b58481963db6782e508efea4f028c7633fc45) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - Tweak package description and readme
 
