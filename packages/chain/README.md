@@ -5,7 +5,7 @@
 [![license](https://img.shields.io/npm/l/abortcontroller-chain)](https://github.com/kyle-johnson/abortcontroller-utils/blob/main/packages/chain/LICENSE)
 [![Codecov](https://img.shields.io/codecov/c/github/kyle-johnson/abortcontroller-utils?flag=chain&label=coverage)](https://app.codecov.io/gh/kyle-johnson/abortcontroller-utils/)
 
-Chain multiple signals into one controller: if any of the signals aborts, the controller will be aborted.
+Chain multiple signals into one controller: if any of the signals aborts, the controller will be aborted. This is particularly useful since most APIs only accept a _single_ AbortSignal input ([`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/fetch), [axios](https://github.com/axios/axios#cancellation), the [AWS SDK](https://aws.amazon.com/blogs/developer/abortcontroller-in-modular-aws-sdk-for-javascript/), etc).
 
 Works with browsers, NodeJS (16+), and spec-compliant polyfills.
 
