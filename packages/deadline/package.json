@@ -1,7 +1,7 @@
 {
   "name": "abortcontroller-deadline",
   "version": "0.0.1",
-  "description": "Creates an AbortController which aborts on a deadline, optionally connecting to other AbortSignals.",
+  "description": "Create an AbortController which aborts after a set number of milliseconds pass (a deadline). Optionally connects to other AbortSignals.",
   "keywords": [
     "signal",
     "abortsignal",
@@ -42,7 +42,7 @@
     }
   },
   "dependencies": {
-    "abortcontroller-chain": "workspace:1.x"
+    "abortcontroller-chain": "workspace:^1.0.0"
   },
   "devDependencies": {
     "@tsconfig/node14": "1.0.1",

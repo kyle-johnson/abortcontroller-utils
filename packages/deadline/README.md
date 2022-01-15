@@ -1,4 +1,4 @@
-# Create an `AbortController` which aborts after a set number of milliseconds (a deadline)
+# Create an `AbortController` which aborts after a set number of milliseconds (a _deadline_)
 
 [![npm](https://img.shields.io/npm/v/abortcontroller-deadline)](https://www.npmjs.com/package/abortcontroller-deadline)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kyle-johnson/abortcontroller-utils/CI)](https://github.com/kyle-johnson/abortcontroller-utils/actions)

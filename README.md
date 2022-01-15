@@ -6,3 +6,8 @@ These utilities bring a few more _bulding blocks_ to make use of AbortController
 [![npm](https://img.shields.io/npm/v/abortcontroller-chain)](https://www.npmjs.com/package/abortcontroller-chain)
 
 Contect an AbortController to one or more AbortSignals.
+
+## [`abortcontroller-deadline`](./packages/deadline)
+[![npm](https://img.shields.io/npm/v/abortcontroller-deadline)](https://www.npmjs.com/package/abortcontroller-deadline)
+
+Easily create an AbortController which aborts after a specified amount of time (a _deadline_).
