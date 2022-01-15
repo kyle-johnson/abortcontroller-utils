@@ -4,26 +4,26 @@ importers:
 
   .:
     specifiers:
-      '@changesets/cli': ^2.19.0
+      '@changesets/cli': 2.19.0
     devDependencies:
       '@changesets/cli': 2.19.0
 
   packages/chain:
     specifiers:
-      '@tsconfig/node14': ^1.0.1
+      '@tsconfig/node14': 1.0.1
       '@types/jest': ^27.4.0
-      '@types/node': 16.x
+      '@types/node': 16.11.19
       '@typescript-eslint/eslint-plugin': 5.7.0
       '@typescript-eslint/parser': 5.7.0
       eslint: 8.5.0
       eslint-config-prettier: 8.3.0
       eslint-plugin-jest: 25.3.0
       eslint-plugin-unicorn: 39.0.0
-      jest: ^27.4.7
-      patch-package: ^6.4.7
+      jest: 27.4.7
+      patch-package: 6.4.7
       prettier: 2.5.1
       ts-jest: 27.1.2
-      typescript: ^4.5.4
+      typescript: 4.5.4
     devDependencies:
       '@tsconfig/node14': 1.0.1
       '@types/jest': 27.4.0
@@ -39,9 +39,6 @@ importers:
       prettier: 2.5.1
       ts-jest: 27.1.2_9364f2ad0b7b67f00a4d081c662c6871
       typescript: 4.5.4
-
-  packages/typings:
-    specifiers: {}
 
 packages:
 
