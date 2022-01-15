@@ -4,8 +4,10 @@ importers:
 
   .:
     specifiers:
+      '@changesets/changelog-github': 0.4.2
       '@changesets/cli': 2.19.0
     devDependencies:
+      '@changesets/changelog-github': 0.4.2
       '@changesets/cli': 2.19.0
 
   packages/chain:
@@ -399,6 +401,14 @@ packages:
       semver: 5.7.1
     dev: true
 
+  /@changesets/changelog-github/0.4.2:
+    resolution: {integrity: sha512-qq8lJcq91ki7UT0fIfIcn5Yy7GJj19TmkLmGZ24/wEfxcD/nHHoTNRoi6nPt+Htf7qEudKxXLzQLi41B7Mt2vg==}
+    dependencies:
+      '@changesets/get-github-info': 0.5.0
+      '@changesets/types': 4.0.2
+      dotenv: 8.6.0
+    dev: true
+
   /@changesets/cli/2.19.0:
     resolution: {integrity: sha512-AqtWiarNSUD42pv7ldTAFMU7pa/39t78VDAWFy78RgUJQyFmXktOG8fzjMhksJ+G5+pWLVSXaLSj6cCbpeWivg==}
     hasBin: true
@@ -462,6 +472,13 @@ packages:
       chalk: 2.4.2
       fs-extra: 7.0.1
       semver: 5.7.1
+    dev: true
+
+  /@changesets/get-github-info/0.5.0:
+    resolution: {integrity: sha512-vm5VgHwrxkMkUjFyn3UVNKLbDp9YMHd3vMf1IyJoa/7B+6VpqmtAaXyDS0zBLfN5bhzVCHrRnj4GcZXXcqrFTw==}
+    dependencies:
+      dataloader: 1.4.0
+      node-fetch: 2.6.6
     dev: true
 
   /@changesets/get-release-plan/3.0.4:
@@ -1580,6 +1597,10 @@ packages:
       whatwg-url: 8.7.0
     dev: true
 
+  /dataloader/1.4.0:
+    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+    dev: true
+
   /debug/4.3.3:
     resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
     engines: {node: '>=6.0'}
@@ -1667,6 +1688,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       webidl-conversions: 5.0.0
+    dev: true
+
+  /dotenv/8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
     dev: true
 
   /electron-to-chromium/1.4.45:
@@ -3203,6 +3229,13 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
 
+  /node-fetch/2.6.6:
+    resolution: {integrity: sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==}
+    engines: {node: 4.x || >=6.0.0}
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: true
+
   /node-int64/0.4.0:
     resolution: {integrity: sha1-h6kGXNs1XTGC2PlM4RGIuCXGijs=}
     dev: true
@@ -3947,6 +3980,10 @@ packages:
       universalify: 0.1.2
     dev: true
 
+  /tr46/0.0.3:
+    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    dev: true
+
   /tr46/2.1.0:
     resolution: {integrity: sha512-15Ih7phfcdP5YxqiB+iDtLoaTz4Nd35+IiAv0kQ5FNKHzXgdWqPoTIqEDDJmXceQt4JZk6lVPT8lnDlPpGDppw==}
     engines: {node: '>=8'}
@@ -4132,6 +4169,10 @@ packages:
       defaults: 1.0.3
     dev: true
 
+  /webidl-conversions/3.0.1:
+    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    dev: true
+
   /webidl-conversions/5.0.0:
     resolution: {integrity: sha512-VlZwKPCkYKxQgeSbH5EyngOmRp7Ww7I9rQLERETtf5ofd9pGeswWiOtogpEO850jziPRarreGxn5QIiTqpb2wA==}
     engines: {node: '>=8'}
@@ -4150,6 +4191,13 @@ packages:
 
   /whatwg-mimetype/2.3.0:
     resolution: {integrity: sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==}
+    dev: true
+
+  /whatwg-url/5.0.0:
+    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
     dev: true
 
   /whatwg-url/8.7.0:
