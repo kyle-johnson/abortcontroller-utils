@@ -1,5 +1,14 @@
 # abortcontroller-deadline
 
+## 1.0.1
+
+### Patch Changes
+
+- [`5f21449`](https://github.com/kyle-johnson/abortcontroller-utils/commit/5f21449e85d2a92ec5e1eefc5b873f90d4ae796c) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - Force a patch release to get github tags
+
+- Updated dependencies [[`5f21449`](https://github.com/kyle-johnson/abortcontroller-utils/commit/5f21449e85d2a92ec5e1eefc5b873f90d4ae796c)]:
+  - abortcontroller-chain@1.0.2
+
 ## 1.0.0
 
 ### Major Changes
