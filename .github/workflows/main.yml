@@ -7,7 +7,7 @@ on:
   # allow manual runs
   workflow_dispatch:
 env:
-  PNPM_VERSION: 6.23.2
+  PNPM_VERSION: 6.26.1
 jobs:
   build:
     runs-on: ubuntu-latest
