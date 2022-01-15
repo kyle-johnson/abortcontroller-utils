@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         node: [16]
-        package: ["chain"]
+        package: ["chain", "deadline"]
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2.0.1
@@ -36,22 +36,9 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        package: ["chain"]
-        command: ["test:ci"]
+        package: ["chain", "deadline"]
+        command: ["test:ci", "lint", "format:check", "type-check", "test:web"]
         node: [ 16 ]
-        include:
-          - package: "chain"
-            command: lint
-            node: 16
-          - package: "chain"
-            command: "format:check"
-            node: 16
-          - package: "chain"
-            command: "type-check"
-            node: 16
-          - package: "chain"
-            command: "test:web"
-            node: 16
     steps:
       - uses: actions/checkout@v2
       - uses: pnpm/action-setup@v2.0.1
