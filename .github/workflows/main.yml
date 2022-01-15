@@ -90,9 +90,9 @@ jobs:
         id: Changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm -r publish --no-git-checks
+          publish: pnpm run release
           version: pnpm run version
-          commit: "chore: update versions"
-          title: "chore: update versions"
+          title: "Version Packages for Release"
+          commit: "release: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
