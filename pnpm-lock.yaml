@@ -24,7 +24,7 @@ importers:
       jest: 28.1.0
       jest-environment-jsdom: 28.1.0
       prettier: 2.6.2
-      ts-jest: 28.0.1
+      ts-jest: 28.0.2
       typescript: 4.6.4
     devDependencies:
       '@tsconfig/node14': 1.0.1
@@ -39,7 +39,7 @@ importers:
       jest: 28.1.0_@types+node@16.11.33
       jest-environment-jsdom: 28.1.0
       prettier: 2.6.2
-      ts-jest: 28.0.1_cecb7ff85d54a968efd277ddda0b4a16
+      ts-jest: 28.0.2_cecb7ff85d54a968efd277ddda0b4a16
       typescript: 4.6.4
 
   packages/deadline:
@@ -57,7 +57,7 @@ importers:
       jest: 28.1.0
       jest-environment-jsdom: 28.1.0
       prettier: 2.6.2
-      ts-jest: 28.0.1
+      ts-jest: 28.0.2
       typescript: 4.6.4
     dependencies:
       abortcontroller-chain: link:../chain
@@ -74,7 +74,7 @@ importers:
       jest: 28.1.0_@types+node@16.11.33
       jest-environment-jsdom: 28.1.0
       prettier: 2.6.2
-      ts-jest: 28.0.1_cecb7ff85d54a968efd277ddda0b4a16
+      ts-jest: 28.0.2_cecb7ff85d54a968efd277ddda0b4a16
       typescript: 4.6.4
 
 packages:
@@ -4050,8 +4050,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/28.0.1_cecb7ff85d54a968efd277ddda0b4a16:
-    resolution: {integrity: sha512-PbkbitaT/9ZYAqqzk3UYTvCq080Seo46T3m/AdwcZ0D8WH2uBhG6PvA8oOAWsZIknzPQU66fYobvFCL8IqIhmg==}
+  /ts-jest/28.0.2_cecb7ff85d54a968efd277ddda0b4a16:
+    resolution: {integrity: sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
     peerDependencies:
