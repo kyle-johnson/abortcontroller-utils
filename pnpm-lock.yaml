@@ -13,7 +13,7 @@ importers:
   packages/chain:
     specifiers:
       '@tsconfig/node14': 1.0.1
-      '@types/jest': 27.5.0
+      '@types/jest': 27.5.1
       '@types/node': 16.11.33
       '@typescript-eslint/eslint-plugin': 5.23.0
       '@typescript-eslint/parser': 5.23.0
@@ -28,7 +28,7 @@ importers:
       typescript: 4.6.4
     devDependencies:
       '@tsconfig/node14': 1.0.1
-      '@types/jest': 27.5.0
+      '@types/jest': 27.5.1
       '@types/node': 16.11.33
       '@typescript-eslint/eslint-plugin': 5.23.0_17b6d2ce7129f0b36f2c30ae592c16e7
       '@typescript-eslint/parser': 5.23.0_eslint@8.15.0+typescript@4.6.4
@@ -39,13 +39,13 @@ importers:
       jest: 28.1.0_@types+node@16.11.33
       jest-environment-jsdom: 28.1.0
       prettier: 2.6.2
-      ts-jest: 28.0.2_cecb7ff85d54a968efd277ddda0b4a16
+      ts-jest: 28.0.2_863acde8f66073d610345a87311f22cf
       typescript: 4.6.4
 
   packages/deadline:
     specifiers:
       '@tsconfig/node14': 1.0.1
-      '@types/jest': 27.5.0
+      '@types/jest': 27.5.1
       '@types/node': 16.11.33
       '@typescript-eslint/eslint-plugin': 5.23.0
       '@typescript-eslint/parser': 5.23.0
@@ -63,7 +63,7 @@ importers:
       abortcontroller-chain: link:../chain
     devDependencies:
       '@tsconfig/node14': 1.0.1
-      '@types/jest': 27.5.0
+      '@types/jest': 27.5.1
       '@types/node': 16.11.33
       '@typescript-eslint/eslint-plugin': 5.23.0_17b6d2ce7129f0b36f2c30ae592c16e7
       '@typescript-eslint/parser': 5.23.0_eslint@8.15.0+typescript@4.6.4
@@ -74,7 +74,7 @@ importers:
       jest: 28.1.0_@types+node@16.11.33
       jest-environment-jsdom: 28.1.0
       prettier: 2.6.2
-      ts-jest: 28.0.2_cecb7ff85d54a968efd277ddda0b4a16
+      ts-jest: 28.0.2_863acde8f66073d610345a87311f22cf
       typescript: 4.6.4
 
 packages:
@@ -1008,8 +1008,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/27.5.0:
-    resolution: {integrity: sha512-9RBFx7r4k+msyj/arpfaa0WOOEcaAZNmN+j80KFbFCoSqCJGHTz7YMAMGQW9Xmqm5w6l5c25vbSjMwlikJi5+g==}
+  /@types/jest/27.5.1:
+    resolution: {integrity: sha512-fUy7YRpT+rHXto1YlL+J9rs0uLGyiqVt3ZOTQR+4ROc47yNl8WLdVLgUloBRhOxP1PZvguHl44T3H0wAWxahYQ==}
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
@@ -4050,7 +4050,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-jest/28.0.2_cecb7ff85d54a968efd277ddda0b4a16:
+  /ts-jest/28.0.2_863acde8f66073d610345a87311f22cf:
     resolution: {integrity: sha512-IOZMb3D0gx6IHO9ywPgiQxJ3Zl4ECylEFwoVpENB55aTn5sdO0Ptyx/7noNBxAaUff708RqQL4XBNxxOVjY0vQ==}
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     hasBin: true
@@ -4071,7 +4071,7 @@ packages:
       esbuild:
         optional: true
     dependencies:
-      '@types/jest': 27.5.0
+      '@types/jest': 27.5.1
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       jest: 28.1.0_@types+node@16.11.33
