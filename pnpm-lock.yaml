@@ -12,7 +12,7 @@ importers:
 
   packages/chain:
     specifiers:
-      '@tsconfig/node14': 1.0.1
+      '@tsconfig/node14': 1.0.3
       '@types/jest': 28.1.1
       '@types/node': 16.11.41
       '@typescript-eslint/eslint-plugin': 5.28.0
@@ -27,7 +27,7 @@ importers:
       ts-jest: 28.0.5
       typescript: 4.7.3
     devDependencies:
-      '@tsconfig/node14': 1.0.1
+      '@tsconfig/node14': 1.0.3
       '@types/jest': 28.1.1
       '@types/node': 16.11.41
       '@typescript-eslint/eslint-plugin': 5.28.0_fe28c36a09305ff6004282ca7beab41d
@@ -44,7 +44,7 @@ importers:
 
   packages/deadline:
     specifiers:
-      '@tsconfig/node14': 1.0.1
+      '@tsconfig/node14': 1.0.3
       '@types/jest': 28.1.1
       '@types/node': 16.11.41
       '@typescript-eslint/eslint-plugin': 5.28.0
@@ -62,7 +62,7 @@ importers:
     dependencies:
       abortcontroller-chain: link:../chain
     devDependencies:
-      '@tsconfig/node14': 1.0.1
+      '@tsconfig/node14': 1.0.3
       '@types/jest': 28.1.1
       '@types/node': 16.11.41
       '@typescript-eslint/eslint-plugin': 5.28.0_fe28c36a09305ff6004282ca7beab41d
@@ -948,8 +948,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@tsconfig/node14/1.0.1:
-    resolution: {integrity: sha512-509r2+yARFfHHE7T6Puu2jjkoycftovhXRqW328PDXTVGKihlb1P8Z9mMZH04ebyajfRY7dedfGynlrFHJUQCg==}
+  /@tsconfig/node14/1.0.3:
+    resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
     dev: true
 
   /@types/babel__core/7.1.18:
