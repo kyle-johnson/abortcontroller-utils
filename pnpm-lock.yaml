@@ -20,7 +20,7 @@ importers:
       eslint: 8.19.0
       eslint-config-prettier: 8.5.0
       eslint-plugin-jest: 26.5.3
-      eslint-plugin-unicorn: 43.0.0
+      eslint-plugin-unicorn: 43.0.1
       jest: 28.1.2
       jest-environment-jsdom: 28.1.2
       prettier: 2.7.1
@@ -35,7 +35,7 @@ importers:
       eslint: 8.19.0
       eslint-config-prettier: 8.5.0_eslint@8.19.0
       eslint-plugin-jest: 26.5.3_106f3c5f63e42cf6b3efe438ead4e9ee
-      eslint-plugin-unicorn: 43.0.0_eslint@8.19.0
+      eslint-plugin-unicorn: 43.0.1_eslint@8.19.0
       jest: 28.1.2_@types+node@16.11.43
       jest-environment-jsdom: 28.1.2
       prettier: 2.7.1
@@ -53,7 +53,7 @@ importers:
       eslint: 8.19.0
       eslint-config-prettier: 8.5.0
       eslint-plugin-jest: 26.5.3
-      eslint-plugin-unicorn: 43.0.0
+      eslint-plugin-unicorn: 43.0.1
       jest: 28.1.2
       jest-environment-jsdom: 28.1.2
       prettier: 2.7.1
@@ -70,7 +70,7 @@ importers:
       eslint: 8.19.0
       eslint-config-prettier: 8.5.0_eslint@8.19.0
       eslint-plugin-jest: 26.5.3_106f3c5f63e42cf6b3efe438ead4e9ee
-      eslint-plugin-unicorn: 43.0.0_eslint@8.19.0
+      eslint-plugin-unicorn: 43.0.1_eslint@8.19.0
       jest: 28.1.2_@types+node@16.11.43
       jest-environment-jsdom: 28.1.2
       prettier: 2.7.1
@@ -1985,8 +1985,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-unicorn/43.0.0_eslint@8.19.0:
-    resolution: {integrity: sha512-Z/6HX8yry+zAjo4jHHTAbe1rfniox7qgmCReGBfTc/CVgotfScaMCc4dtSSTHlJ+7Yix5o6LPXzwwpuGGFricg==}
+  /eslint-plugin-unicorn/43.0.1_eslint@8.19.0:
+    resolution: {integrity: sha512-wYvF6q0RRTKw6gzbKy5bbazWUrBEPIto2S9U6eSF+tsHgtgE+CwQ6Bww1W2Ie9TRED01QkZRN79c5aVMFgrFYw==}
     engines: {node: '>=14.18'}
     peerDependencies:
       eslint: '>=8.18.0'
