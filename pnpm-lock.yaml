@@ -13,7 +13,7 @@ importers:
   packages/chain:
     specifiers:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.1.1
+      '@types/jest': 29.1.2
       '@types/node': 16.11.64
       '@typescript-eslint/eslint-plugin': 5.39.0
       '@typescript-eslint/parser': 5.39.0
@@ -28,7 +28,7 @@ importers:
       typescript: 4.8.4
     devDependencies:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.1.1
+      '@types/jest': 29.1.2
       '@types/node': 16.11.64
       '@typescript-eslint/eslint-plugin': 5.39.0_be048b79d04b908735dc19ebba1dbd66
       '@typescript-eslint/parser': 5.39.0_eslint@8.24.0+typescript@4.8.4
@@ -45,7 +45,7 @@ importers:
   packages/deadline:
     specifiers:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.1.1
+      '@types/jest': 29.1.2
       '@types/node': 16.11.64
       '@typescript-eslint/eslint-plugin': 5.39.0
       '@typescript-eslint/parser': 5.39.0
@@ -63,7 +63,7 @@ importers:
       abortcontroller-chain: link:../chain
     devDependencies:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.1.1
+      '@types/jest': 29.1.2
       '@types/node': 16.11.64
       '@typescript-eslint/eslint-plugin': 5.39.0_be048b79d04b908735dc19ebba1dbd66
       '@typescript-eslint/parser': 5.39.0_eslint@8.24.0+typescript@4.8.4
@@ -744,13 +744,6 @@ packages:
       jest-mock: 29.1.2
     dev: true
 
-  /@jest/expect-utils/29.0.3:
-    resolution: {integrity: sha512-i1xUkau7K/63MpdwiRqaxgZOjxYs4f0WMTGJnYwUKubsNRZSeQbLorS7+I4uXVF9KQ5r61BUPAUMZ7Lf66l64Q==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      jest-get-type: 29.0.0
-    dev: true
-
   /@jest/expect-utils/29.1.2:
     resolution: {integrity: sha512-4a48bhKfGj/KAH39u0ppzNTABXQ8QPccWAFUFobWBaEMSMp+sB31Z2fK/l47c4a/Mu1po2ffmfAIPxXbVTXdtg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1040,11 +1033,11 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.1.1:
-    resolution: {integrity: sha512-U9Ey07dGWl6fUFaIaUQUKWG5NoKi/zizeVQCGV8s4nSU0jPgqphVZvS64+8BtWYvrc3ZGw6wo943NSYPxkrp/g==}
+  /@types/jest/29.1.2:
+    resolution: {integrity: sha512-y+nlX0h87U0R+wsGn6EBuoRWYyv3KFtwRNP3QWp9+k2tJ2/bqcGS3UxD7jgT+tiwJWWq3UsyV4Y+T6rsMT4XMg==}
     dependencies:
-      expect: 29.0.3
-      pretty-format: 29.0.3
+      expect: 29.1.2
+      pretty-format: 29.1.2
     dev: true
 
   /@types/jsdom/20.0.0:
@@ -2123,17 +2116,6 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /expect/29.0.3:
-    resolution: {integrity: sha512-t8l5DTws3212VbmPL+tBFXhjRHLmctHB0oQbL8eUc6S7NzZtYUhycrFO9mkxA0ZUC6FAWdNi7JchJSkODtcu1Q==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/expect-utils': 29.0.3
-      jest-get-type: 29.0.0
-      jest-matcher-utils: 29.0.3
-      jest-message-util: 29.1.2
-      jest-util: 29.1.2
-    dev: true
-
   /expect/29.1.2:
     resolution: {integrity: sha512-AuAGn1uxva5YBbBlXb+2JPxJRuemZsmlGcapPXWNSBNsQtAULfjioREGBWuI0EOvYUKjDnrCy8PW5Zlr1md5mw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -2848,16 +2830,6 @@ packages:
       - supports-color
     dev: true
 
-  /jest-diff/29.0.3:
-    resolution: {integrity: sha512-+X/AIF5G/vX9fWK+Db9bi9BQas7M9oBME7egU7psbn4jlszLFCu0dW63UgeE6cs/GANq4fLaT+8sGHQQ0eCUfg==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      chalk: 4.1.2
-      diff-sequences: 29.0.0
-      jest-get-type: 29.0.0
-      pretty-format: 29.1.2
-    dev: true
-
   /jest-diff/29.1.2:
     resolution: {integrity: sha512-4GQts0aUopVvecIT4IwD/7xsBaMhKTYoM4/njE/aVw9wpw+pIUVp8Vab/KnSzSilr84GnLBkaP3JLDnQYCKqVQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -2945,16 +2917,6 @@ packages:
     resolution: {integrity: sha512-TG5gAZJpgmZtjb6oWxBLf2N6CfQ73iwCe6cofu/Uqv9iiAm6g502CAnGtxQaTfpHECBdVEMRBhomSXeLnoKjiQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      jest-get-type: 29.0.0
-      pretty-format: 29.1.2
-    dev: true
-
-  /jest-matcher-utils/29.0.3:
-    resolution: {integrity: sha512-RsR1+cZ6p1hDV4GSCQTg+9qjeotQCgkaleIKLK7dm+U4V/H2bWedU3RAtLm8+mANzZ7eDV33dMar4pejd7047w==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      chalk: 4.1.2
-      jest-diff: 29.0.3
       jest-get-type: 29.0.0
       pretty-format: 29.1.2
     dev: true
@@ -3758,15 +3720,6 @@ packages:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: true
-
-  /pretty-format/29.0.3:
-    resolution: {integrity: sha512-cHudsvQr1K5vNVLbvYF/nv3Qy/F/BcEKxGuIeMiVMRHxPOO1RxXooP8g/ZrwAp7Dx+KdMZoOc7NxLHhMrP2f9Q==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/schemas': 29.0.0
-      ansi-styles: 5.2.0
-      react-is: 18.1.0
     dev: true
 
   /pretty-format/29.1.2:
