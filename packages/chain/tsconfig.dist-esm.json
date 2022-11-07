@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.dist.json",
+
+  "compilerOptions": {
+    "outDir": "dist-esm",
+    "module": "es2022",
+    "sourceMap": false,
+    "inlineSourceMap": true,
+    "declaration": false,
+    "declarationMap": false
+  }
+}

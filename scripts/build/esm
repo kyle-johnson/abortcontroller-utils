@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf dist-esm && \
+  tsc -p tsconfig.dist-esm.json && \
+  find dist-esm -name '*.js' -exec sh -c 'mv "$0" "${0%.js}.mjs"' {} \;
