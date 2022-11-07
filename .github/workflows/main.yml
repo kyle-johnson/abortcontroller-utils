@@ -6,8 +6,6 @@ on:
     branches: [main]
   # allow manual runs
   workflow_dispatch:
-env:
-  PNPM_VERSION: 6.26.1
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,18 +16,17 @@ jobs:
         package: ["chain", "deadline"]
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: ${{ env.PNPM_VERSION }}
+      - id: pnpm
+        uses: ./.github/actions/setup-pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
       - name: install deps
-        run: pnpm install --frozen-lockfile --filter {./packages/${{ matrix.package }}}...
+        run: pnpm --filter {./packages/${{ matrix.package }}}... install --frozen-lockfile
       - name: build
-        run: pnpm run build --filter {./packages/${{ matrix.package }}}...
+        run: pnpm --filter {./packages/${{ matrix.package }}}... run build
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 2
@@ -41,20 +38,19 @@ jobs:
         node: [ 16 ]
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: ${{ env.PNPM_VERSION }}
+      - id: pnpm
+        uses: ./.github/actions/setup-pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
           cache: "pnpm"
           cache-dependency-path: pnpm-lock.yaml
       - name: install deps
-        run: pnpm install --frozen-lockfile --filter {./packages/${{ matrix.package }}}...
+        run: pnpm --filter {./packages/${{ matrix.package }}}... install --frozen-lockfile
       - name: build deps
-        run: pnpm run build --filter {./packages/${{ matrix.package }}}^...
+        run: pnpm --filter {./packages/${{ matrix.package }}}^... run build
       - name: ${{ matrix.command }}
-        run: pnpm run ${{ matrix.command }} --filter {./packages/${{ matrix.package }}}
+        run: pnpm --filter {./packages/${{ matrix.package }}} run ${{ matrix.command }}
       - name: coverage
         uses: codecov/codecov-action@v3
         if: matrix.command == 'test:ci' && matrix.node == '16'
@@ -70,9 +66,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: ${{ env.PNPM_VERSION }}
+      - id: pnpm
+        uses: ./.github/actions/setup-pnpm
       - uses: actions/setup-node@v3
         with:
           node-version: 16

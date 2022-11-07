@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"version": "changeset version; pnpm install --lockfile-only; pnpm run -r format",
-		"release": "pnpm -r publish --no-git-checks; changeset tag"
+		"version": "changeset version && pnpm install --lockfile-only && pnpm run -r format",
+		"release": "pnpm -r publish --no-git-checks && changeset tag"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "0.4.7",
