@@ -1,0 +1,11 @@
+name: "setup pnpm"
+description: "Installs pnpm, respecting whatever version is set in ./.tool-versions (from asdf)"
+runs:
+  using: "composite"
+  steps:
+    - id: get-version
+      shell: bash
+      run: echo "version=$(awk '/pnpm/ {print $2}' .tool-versions)" >> $GITHUB_OUTPUT
+    - uses: pnpm/action-setup@v2.2.4
+      with:
+        version: ${{ steps.get-version.outputs.version }}
