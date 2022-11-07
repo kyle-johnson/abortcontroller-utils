@@ -1,5 +1,16 @@
 # abortcontroller-deadline
 
+## 2.0.0
+
+### Major Changes
+
+- [#207](https://github.com/kyle-johnson/abortcontroller-utils/pull/207) [`b999b1a`](https://github.com/kyle-johnson/abortcontroller-utils/commit/b999b1a8731ba53cffedfa08df9d9180b05e4a1a) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - Add ESM support. CommonJS support is retained, but this is treated as a BREAKING CHANGE since `"main"` is replaced with `"exports"` in `package.json`.
+
+### Patch Changes
+
+- Updated dependencies [[`b999b1a`](https://github.com/kyle-johnson/abortcontroller-utils/commit/b999b1a8731ba53cffedfa08df9d9180b05e4a1a)]:
+  - abortcontroller-chain@2.0.0
+
 ## 1.0.1
 
 ### Patch Changes
