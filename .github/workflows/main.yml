@@ -24,9 +24,9 @@ jobs:
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
       - name: install deps
-        run: pnpm install --frozen-lockfile --filter {./packages/${{ matrix.package }}}...
+        run: pnpm --filter {./packages/${{ matrix.package }}}... install --frozen-lockfile
       - name: build
-        run: pnpm run build --filter {./packages/${{ matrix.package }}}...
+        run: pnpm --filter {./packages/${{ matrix.package }}}... run build
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 2
@@ -46,11 +46,11 @@ jobs:
           cache: "pnpm"
           cache-dependency-path: pnpm-lock.yaml
       - name: install deps
-        run: pnpm install --frozen-lockfile --filter {./packages/${{ matrix.package }}}...
+        run: pnpm --filter {./packages/${{ matrix.package }}}... install --frozen-lockfile
       - name: build deps
-        run: pnpm run build --filter {./packages/${{ matrix.package }}}^...
+        run: pnpm --filter {./packages/${{ matrix.package }}}^... run build
       - name: ${{ matrix.command }}
-        run: pnpm run ${{ matrix.command }} --filter {./packages/${{ matrix.package }}}
+        run: pnpm --filter {./packages/${{ matrix.package }}} run ${{ matrix.command }}
       - name: coverage
         uses: codecov/codecov-action@v3
         if: matrix.command == 'test:ci' && matrix.node == '16'
