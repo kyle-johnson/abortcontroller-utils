@@ -19,8 +19,11 @@
     "url": "https://github.com/kyle-johnson/abortcontroller-utils.git"
   },
   "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist-esm/index.mjs"
+    ".": {
+      "import": "./dist-esm/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
   },
   "types": "dist/index.d.ts",
   "files": [
