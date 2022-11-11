@@ -13,7 +13,7 @@ importers:
   packages/chain:
     specifiers:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.2.1
+      '@types/jest': 29.2.2
       '@types/node': 16.18.3
       '@typescript-eslint/eslint-plugin': 5.42.0
       '@typescript-eslint/parser': 5.42.0
@@ -29,7 +29,7 @@ importers:
       typescript: 4.8.4
     devDependencies:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.2.1
+      '@types/jest': 29.2.2
       '@types/node': 16.18.3
       '@typescript-eslint/eslint-plugin': 5.42.0_ofgjrzjuekeo7s3hdyz2yuzw34
       '@typescript-eslint/parser': 5.42.0_rmayb2veg2btbq6mbmnyivgasy
@@ -47,7 +47,7 @@ importers:
   packages/deadline:
     specifiers:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.2.1
+      '@types/jest': 29.2.2
       '@types/node': 16.18.3
       '@typescript-eslint/eslint-plugin': 5.42.0
       '@typescript-eslint/parser': 5.42.0
@@ -66,7 +66,7 @@ importers:
       abortcontroller-chain: link:../chain
     devDependencies:
       '@tsconfig/node14': 1.0.3
-      '@types/jest': 29.2.1
+      '@types/jest': 29.2.2
       '@types/node': 16.18.3
       '@typescript-eslint/eslint-plugin': 5.42.0_ofgjrzjuekeo7s3hdyz2yuzw34
       '@typescript-eslint/parser': 5.42.0_rmayb2veg2btbq6mbmnyivgasy
@@ -1028,8 +1028,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.2.1:
-    resolution: {integrity: sha512-nKixEdnGDqFOZkMTF74avFNr3yRqB1ZJ6sRZv5/28D5x2oLN14KApv7F9mfDT/vUic0L3tRCsh3XWpWjtJisUQ==}
+  /@types/jest/29.2.2:
+    resolution: {integrity: sha512-og1wAmdxKoS71K2ZwSVqWPX6OVn3ihZ6ZT2qvZvZQm90lJVDyXIjYcu4Khx2CNIeaFv12rOU/YObOsI3VOkzog==}
     dependencies:
       expect: 29.2.2
       pretty-format: 29.2.1
