@@ -1,5 +1,14 @@
 # abortcontroller-deadline
 
+## 2.0.1
+
+### Patch Changes
+
+- [#211](https://github.com/kyle-johnson/abortcontroller-utils/pull/211) [`505463e`](https://github.com/kyle-johnson/abortcontroller-utils/commit/505463e96dc3845286c7ce75c79390338dd396ab) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - Modify `package.json` `exports` for better Webpack compatibility.
+
+- Updated dependencies [[`505463e`](https://github.com/kyle-johnson/abortcontroller-utils/commit/505463e96dc3845286c7ce75c79390338dd396ab)]:
+  - abortcontroller-chain@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
