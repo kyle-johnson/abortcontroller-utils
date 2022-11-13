@@ -12,11 +12,23 @@
     ":semanticCommits"
   ],
   "prConcurrentLimit": 5,
-  "stabilityDays": 5,
+  "stabilityDays": 4,
+  "internalChecksFilter": "strict",
   "packageRules": [
     {
       "matchPackageNames": ["@types/node"],
       "extends": [":disableMajorUpdates"]
+    },
+    {
+      "matchPackagePatterns": ["^eslint"],
+      "excludePackagePatterns": ["jest"],
+      "groupName": "eslint packages",
+      "extends": ["schedule:monthly"]
+    },
+    {
+      "matchPackagePatterns": ["jest"],
+      "groupName": "jest packages",
+      "extends": ["schedule:monthly"]
     }
   ]
 }
