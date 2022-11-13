@@ -20,6 +20,11 @@
       "extends": [":disableMajorUpdates"]
     },
     {
+      "matchPackageNames": ["node"],
+      "matchManagers": ["asdf"],
+      "extends": [":disableMajorUpdates"]
+    },
+    {
       "matchPackagePatterns": ["^eslint"],
       "excludePackagePatterns": ["jest"],
       "groupName": "eslint packages",
