@@ -1,5 +1,5 @@
 # AbortController Utilities
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kyle-johnson/abortcontroller-utils/CI)](https://github.com/kyle-johnson/abortcontroller-utils/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kyle-johnson/abortcontroller-utils/main.yml?branch=main)](https://github.com/kyle-johnson/abortcontroller-utils/actions)
 
 [AbortControllers](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) and [AbortSignals](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) are awesome, but they are very simple building blocks.
 
