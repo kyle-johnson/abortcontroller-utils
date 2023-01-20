@@ -1,7 +1,7 @@
 # Create an `AbortController` which aborts after a set number of milliseconds (a _deadline_)
 
 [![npm](https://img.shields.io/npm/v/abortcontroller-deadline)](https://www.npmjs.com/package/abortcontroller-deadline)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kyle-johnson/abortcontroller-utils/main.yml?branch=main)](https://github.com/kyle-johnson/abortcontroller-utils/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/kyle-johnson/abortcontroller-utils/main.yml?branch=main)](https://github.com/kyle-johnson/abortcontroller-utils/actions)
 [![license](https://img.shields.io/npm/l/abortcontroller-deadline)](https://github.com/kyle-johnson/abortcontroller-utils/blob/main/packages/deadline/LICENSE)
 [![Codecov](https://img.shields.io/codecov/c/github/kyle-johnson/abortcontroller-utils?flag=deadline&label=coverage)](https://app.codecov.io/gh/kyle-johnson/abortcontroller-utils/)
 
