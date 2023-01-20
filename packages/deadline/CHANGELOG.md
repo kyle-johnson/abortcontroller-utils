@@ -1,5 +1,14 @@
 # abortcontroller-deadline
 
+## 2.0.2
+
+### Patch Changes
+
+- [#233](https://github.com/kyle-johnson/abortcontroller-utils/pull/233) [`ac53292`](https://github.com/kyle-johnson/abortcontroller-utils/commit/ac53292c966cddef2eb02b57a783b9f415303646) Thanks [@kyle-johnson](https://github.com/kyle-johnson)! - fix: update READMEs for shields.io badge change (no code has changed in this release)
+
+- Updated dependencies [[`ac53292`](https://github.com/kyle-johnson/abortcontroller-utils/commit/ac53292c966cddef2eb02b57a783b9f415303646)]:
+  - abortcontroller-chain@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes
