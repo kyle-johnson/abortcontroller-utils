@@ -54,7 +54,7 @@
   "devDependencies": {
     "@tsconfig/node14": "1.0.3",
     "@types/jest": "29.5.0",
-    "@types/node": "16.18.36",
+    "@types/node": "16.18.58",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.32.0",
