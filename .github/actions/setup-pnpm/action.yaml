@@ -6,6 +6,6 @@ runs:
     - id: get-version
       shell: bash
       run: echo "version=$(awk '/pnpm/ {print $2}' .tool-versions)" >> $GITHUB_OUTPUT
-    - uses: pnpm/action-setup@v2.2.4
+    - uses: pnpm/action-setup@v2.4.0
       with:
         version: ${{ steps.get-version.outputs.version }}
