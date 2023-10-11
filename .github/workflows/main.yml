@@ -15,7 +15,7 @@ jobs:
         node: [16]
         package: ["chain", "deadline"]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: pnpm
         uses: ./.github/actions/setup-pnpm
       - uses: actions/setup-node@v3
@@ -37,7 +37,7 @@ jobs:
         command: ["test:ci", "lint", "format:check", "type-check", "test:web"]
         node: [ 16 ]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - id: pnpm
         uses: ./.github/actions/setup-pnpm
       - uses: actions/setup-node@v3
@@ -63,7 +63,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - id: pnpm
